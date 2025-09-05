@@ -98,23 +98,17 @@ header {
   display: iniline;
 }
 
-@media screen and (max-width: 1200px) {
-    main {
-        flex-flow: column nowrap;
-    }
-
-    main aside {
-        align-self: center;
-    }
-}
-
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     nav ul {
-        justify-content: center;
+        flex-direction: column; /* menu ditumpuk ke bawah */
+        align-items: center;
+        gap: 0.5rem;
     }
 
-    main aside {
-        align-self: stretch;
-    }
+    nav a {
+        font-size: 18px;
+        width: 100%;            /* tombol full lebar */
+        text-align: center;
+    }
 }
+
