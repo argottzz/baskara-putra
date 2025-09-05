@@ -87,10 +87,11 @@ aside {
 
 
 .featured img {
-    width: 100%;
-    max-height: 300px;
-    object-fit: contain;
-    object-position: center;
+    max-width: 100%;   /* gambar tidak boleh lebih lebar dari layar */
+    height: auto;      /* tinggi menyesuaikan proporsi */
+    display: block;    /* hilangkan jarak kosong bawaan inline */
+    margin: 0 auto;    /* biar center kalau lebih kecil */
+    border-radius: 5px;
 }
 
 .card {
@@ -121,4 +122,5 @@ aside {
         align-self: stretch;
     }
 }
+
 
