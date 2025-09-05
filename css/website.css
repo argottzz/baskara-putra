@@ -42,15 +42,14 @@ nav a {
 
 nav a:hover {
     background-color: #739EC9;
+      font-weight:bold ;
 }
 
 nav ul {
-    padding-inline: 2rem;
+ padding-inline: 4rem;
     display: flex;
-    flex-wrap: wrap; /* biar gak kepanjangan di HP */
-    gap: 1rem;
-    justify-content: center;
-    margin: 0;
+
+    gap: 2rem;
 }
 
 nav li {
@@ -59,7 +58,7 @@ nav li {
 
 nav {
     background-color: #44444e;
-    padding: 10px;
+    padding: 50px;
     position: sticky;
     top: 0;
 }
@@ -68,7 +67,7 @@ nav {
     flex: 5;
     display: flex;
     flex-flow: column nowrap;
-    gap: 1rem;
+    gap: 1rem 2rem;
 }
 
 aside {
@@ -87,30 +86,22 @@ aside img {
     padding: 20px;
 }
 
-/* --- RESPONSIVE --- */
 @media screen and (max-width: 1200px) {
     main {
-        flex-flow: column nowrap; /* artikel & aside jadi vertikal */
+        flex-flow: column nowrap;
     }
 
     main aside {
         align-self: center;
-        width: 100%; /* biar full di layar kecil */
     }
 }
+
 
 @media screen and (max-width: 768px) {
-    h1 {
-        font-size: 1.5rem;
-        padding: 20px;
-    }
-
     nav ul {
-        flex-direction: column; /* menu ditumpuk ke bawah */
-        align-items: center;
+        justify-content: center;
     }
 
-    nav a {
-        font-size: 16px;
+    main aside {
+        align-self: stretch;
     }
-}
