@@ -58,7 +58,7 @@ nav li {
 
 nav {
     background-color: #44444e;
-    padding: 50px;
+    padding: 10px;
     position: sticky;
     top: 0;
 }
@@ -105,3 +105,4 @@ aside img {
     main aside {
         align-self: stretch;
     }
+
