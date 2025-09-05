@@ -84,9 +84,7 @@ aside {
     flex: 1;
 }
 
-
-
-.featured img {
+img {
     max-width: 100%;   /* gambar tidak boleh lebih lebar dari layar */
     height: auto;      /* tinggi menyesuaikan proporsi */
     display: block;    /* hilangkan jarak kosong bawaan inline */
@@ -122,5 +120,6 @@ aside {
         align-self: stretch;
     }
 }
+
 
 
