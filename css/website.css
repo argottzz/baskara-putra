@@ -4,13 +4,12 @@ body {
     padding: 0;
 }
 
-h1 {
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
     background-color: #5682B1;
-    margin: 0;
-    padding: 30px;
     text-align: center;
-    color: aliceblue;
-    font-size: 2rem;
+    color: white;
 }
 
 h2 {
@@ -105,5 +104,6 @@ aside img {
     main aside {
         align-self: stretch;
     }
+
 
 
