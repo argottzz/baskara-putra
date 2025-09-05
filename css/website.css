@@ -1,110 +1,120 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.jumbotron {
-    font-size: 20px;
-    padding: 60px;
-    background-color: #5682B1;
-    text-align: center;
-    color: white;
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 h2,
 h3 {
-    color: #5682B1;
-}
-
-main {
-    padding: 20px;
-    display: flex;
-    gap: 2rem;
+  color: #8d08a2;
 }
 
 footer {
-    padding: 20px;
-    color: aliceblue;
-    background-color: #5682B1;
-    text-align: center;
-    font-weight: bold;
-}
-
-nav a {
-    font-size: 16px;
-    text-decoration: none;
-    color: aliceblue;
-    font-weight: 500;
-    padding: 8px 12px;        /* kasih ruang di dalam link */
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    display: block;           /* biar klik area lebih besar */
-}
-
-nav a:hover {
-    background-color: #739EC9;
-      font-weight:bold ;
-}
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;          /* biar bisa turun ke baris baru */
-    justify-content: center;  /* rata tengah */
-    gap: 1rem;                /* jarak antar item */
-}
-
-nav li {
-    list-style-type: none;
+  padding: 20px;
+  color: white;
+  background-color: #8d08a2;
+  text-align: center;
+  font-weight: bold;
 }
 
 nav {
-    background-color: #44444e;
-    padding: 10px;
-    position: sticky;
-    top: 0;
+  background-color: #720381;
+  padding: 5px;
+  position: sticky;
+  top: 0;
 }
 
-.content {
-    flex: 5;
+nav ul {
+    padding-inline: 4rem;
     display: flex;
-    flex-flow: column nowrap;
-    gap: 1rem 2rem;
+
+    gap: 2rem;
 }
 
-aside {
-    flex: 1;
+nav li {
+  list-style-type: none;
 }
 
-aside img {
-    max-width: 100%; /* biar gambar menyesuaikan layar */
-    height: auto;
-    border-radius: 5px;
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+
+    color: white;
+}
+
+nav a:hover {
+  font-weight: bold;
+  background-color: black;
+  color: #fff;
+}
+
+
+.profile header {
+    text-align: center;
+}
+
+.profile img {
+    width: 200px;
 }
 
 .card {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    border-radius: 5px;
-    padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  background: white;
 }
 
-@media screen and (max-width: 600px) {
+.jumbotron {
+  font-size: 20px;
+  padding: 60px 20px;
+  background-color: #570262;
+  text-align: center;
+  color: white;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+aside {
+  flex: 1;
+}
+
+header {
+  display: iniline;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+
+    main aside {
+        align-self: center;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
     nav ul {
-        flex-direction: column; /* menu ditumpuk ke bawah */
-        align-items: center;
-        gap: 0.5rem;
+        justify-content: center;
     }
 
-    nav a {
-        font-size: 18px;
-        width: 100%;            /* tombol full lebar */
-        text-align: center;
+    main aside {
+        align-self: stretch;
     }
 }
-
