@@ -36,12 +36,14 @@ footer {
 }
 
 nav a {
-    font-size: 18px;
+    font-size: 16px;
     text-decoration: none;
     color: aliceblue;
-    font-weight: 400;
+    font-weight: 500;
+    padding: 8px 12px;        /* kasih ruang di dalam link */
     border-radius: 5px;
     transition: background-color 0.3s;
+    display: block;           /* biar klik area lebih besar */
 }
 
 nav a:hover {
@@ -50,10 +52,12 @@ nav a:hover {
 }
 
 nav ul {
- padding-inline: 4rem;
+    margin: 0;
+    padding: 0;
     display: flex;
-
-    gap: 2rem;
+    flex-wrap: wrap;          /* biar bisa turun ke baris baru */
+    justify-content: center;  /* rata tengah */
+    gap: 1rem;                /* jarak antar item */
 }
 
 nav li {
@@ -90,26 +94,17 @@ aside img {
     padding: 20px;
 }
 
-@media screen and (max-width: 1200px) {
-    main {
-        flex-flow: column nowrap;
+@media screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* menu ditumpuk ke bawah */
+        align-items: center;
+        gap: 0.5rem;
     }
 
-    main aside {
-        align-self: center;
+    nav a {
+        font-size: 18px;
+        width: 100%;            /* tombol full lebar */
+        text-align: center;
     }
 }
-
-
-@media screen and (max-width: 768px) {
-    nav ul {
-        justify-content: center;
-    }
-
-    main aside {
-        align-self: stretch;
-    }
-
-
-
 
