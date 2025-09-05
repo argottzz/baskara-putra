@@ -97,26 +97,21 @@ img {
 
 }
 
-@media screen and (max-width: 1200px) {
-    main {
-        flex-flow: column nowrap;
-    }
-
-    main aside {
-        align-self: center;
-    }
-}
-
-
 @media screen and (max-width: 768px) {
-    nav ul {
-        justify-content: center;
-    }
+  nav ul {
+    flex-direction: column;   /* ubah jadi vertikal */
+    align-items: center;
+    gap: 1rem;
+    padding-inline: 0;
+  }
 
-    main aside {
-        align-self: stretch;
-    }
+  nav a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
 }
+
 
 
 
